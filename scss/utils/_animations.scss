@@ -1,0 +1,21 @@
+.heart {
+    justify-self: center;
+    align-self: center;
+    cursor: pointer;
+  
+    > .fa-solid {
+        display: none;
+
+    }
+    &:hover {
+        > .fa-regular {
+            display: none;
+        }
+        > .fa-solid {
+            display: block;
+            @include gradientColor();
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+// Check if value entered is inset or not.
+@function checkInsetValue($value) {
+    @if($value == 'inset') {
+        @return true,
+    } @else {
+        @return false;
+    }
+}

@@ -1,0 +1,33 @@
+header {
+    text-align: center;
+    background-color: $siteBackground;
+    padding-bottom: 60px;
+    
+    .header {
+        padding: 20px 0px 20px 0px;
+        background-color: #fff;
+    }
+
+    .search {
+        padding: 20px 0px;
+        background-color: $searchBackground;
+        @include boxShadow($box-shadow-top-params, true);
+        > input {
+            border: none;
+            background-color: $searchBackground;
+            padding-left: 15px;
+            outline: none;
+            position: relative;
+            left: 25px;
+        }
+
+        > i {
+            position: relative;
+            left: 28px;
+        }
+    }
+
+    .explorer {
+        margin-top: 30px;
+    }
+}

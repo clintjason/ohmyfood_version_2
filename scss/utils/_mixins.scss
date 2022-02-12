@@ -1,0 +1,12 @@
+@mixin boxShadow ($size, $type:checkInsetValue($type), $color: $shadowColor) {
+    @if($type) {
+        box-shadow: inset $size $color;
+    }@else {
+        box-shadow: $size $color;
+    }
+}
+
+@mixin gradientColor ($firstColor: $secondaryColor,$secondColor: $primaryColor) {
+    background-image: linear-gradient($firstColor,$secondColor);
+}
+

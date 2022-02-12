@@ -1,0 +1,13 @@
+.btn {
+    border: 1px solid transparent;
+    border-radius: $btnRadius;
+    padding: $btnPaddings;
+    color: white;
+    @include gradientColor;
+    @include boxShadow($box-shadow-round, false);
+}
+
+.explorer:hover {
+    @include gradientColor(lighten($secondaryColor,2%),lighten($primaryColor,5%));
+    @include boxShadow($box-shadow-round-hover, false);
+}

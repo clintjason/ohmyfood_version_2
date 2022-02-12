@@ -1,0 +1,44 @@
+.fonction__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+
+    &__element {
+        background-color: $siteBackground;
+        padding: $btnPaddings;
+        width: 80%;
+        border-radius: $btnRadius;
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        cursor: pointer;
+        @include boxShadow($box-shadow-round-deep, false);
+
+        > .count {
+            position: absolute;
+            padding: 3px 5px 1px;
+            background-color: $primaryColor;
+            color: #FFF;
+            border-radius: 50px;
+            width: 22px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            left: -8px;
+            top: 14px;
+        }
+
+        &:hover {
+            @include boxShadow($box-shadow-round-deep-hover, false);
+            background-color: #f5edff;
+
+            > i {
+                color: $primaryColor;
+            }
+        }
+
+    }
+}

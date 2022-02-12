@@ -1,0 +1,43 @@
+// Section Restaurant
+.restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: $siteBackground;
+    gap: 30px;
+
+    
+
+    &__card {
+        position: relative;
+        width: 80%;
+        border-radius: $round-borders;
+        @include boxShadow($box-shadow-round-deep, false);
+        //display: flex;
+        //flex-direction: column;
+
+        &__image {
+            > img {
+                width: 100%;
+                height: 180px;
+                border-radius: $round-borders $round-borders 0px 0px;
+            }
+        }
+
+        &__body {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            padding: 5px 0px 10px 10px;
+        }
+    }
+
+    .new {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: green;
+        background-color: #99e2d0;
+        padding: 10px;
+        border-radius: $round-borders;
+    }
+}

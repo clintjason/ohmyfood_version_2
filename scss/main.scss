@@ -1,0 +1,18 @@
+// Utils Files
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'utils/functions';
+@import 'utils/animations';
+
+// Base Files
+@import 'base/base';
+@import 'base/typography';
+
+// Component Files
+@import 'components/buttons';
+
+// Layout Files
+@import 'layouts/header';
+@import 'layouts/fonctionnement';
+@import 'layouts/restaurant';
+@import 'layouts/footer';

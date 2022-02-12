@@ -1,0 +1,8 @@
+body {
+    color: $textColor;
+}
+
+::placeholder {
+    color: $placeholderColor;
+    font-weight: bold;
+}
