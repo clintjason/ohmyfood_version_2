@@ -7,4 +7,18 @@ footer {
     a {
         color: white;
     }
+
+    @include small-mobile-only {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        h2 {
+            grid-column: 1/-1;
+        }
+    }
+
+    @include tablette-only {
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
 }

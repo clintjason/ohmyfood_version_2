@@ -10,3 +10,25 @@
     background-image: linear-gradient($firstColor,$secondColor);
 }
 
+@mixin small-mobile-only {
+    @media screen and (min-width: map-get($breakpoints,small-mobile)) {
+        @content;
+    }
+}
+@mixin mobile-only {
+    @media screen and (min-width: map-get($breakpoints,mobile)) {
+        @content;
+    }
+}
+
+@mixin tablette-only {
+    @media screen and (min-width: map-get($breakpoints,tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints,desktop)) {
+        @content;
+    }
+}

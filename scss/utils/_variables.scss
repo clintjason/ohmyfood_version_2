@@ -26,3 +26,13 @@ $inset : "inset";
 
 // Rounded Borders
 $round-borders: 8px;
+
+
+// Breakpoints
+$breakpoints: (
+    small-mobile: 450px,
+    mobile: 599px,
+    tablette: 768px,
+    desktop: 1480px,
+
+);

@@ -3,19 +3,23 @@
     flex-flow: row wrap;
     align-content: center;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
 
     &__element {
         background-color: $siteBackground;
-        padding: $btnPaddings;
-        width: 80%;
+        padding: $btnPaddings $btnPaddings $btnPaddings 50px;
+        width: 284px;
         border-radius: $btnRadius;
         position: relative;
-        display: flex;
-        justify-content: space-evenly;
+        //display: flex;
+        //justify-content: space-evenly;
         cursor: pointer;
         @include boxShadow($box-shadow-round-deep, false);
+
+        > .first {
+            padding-left: 4px;
+        }
 
         > .count {
             position: absolute;
@@ -29,6 +33,15 @@
             align-content: center;
             left: -8px;
             top: 14px;
+        }
+
+        > i {
+            position: relative;
+            right: 15px;
+        }
+
+        > .fa-mobile-screen-button {
+            right: 12px;
         }
 
         &:hover {
