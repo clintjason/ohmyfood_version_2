@@ -1,8 +1,16 @@
 body {
     color: $textColor;
+    font-family: 'Roboto', sans-serif;
 }
 
 ::placeholder {
     color: $placeholderColor;
     font-weight: bold;
+}
+
+//h3, h4, h5, h6
+h1, h2 {
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 2px;
+    font-weight: unset;
 }

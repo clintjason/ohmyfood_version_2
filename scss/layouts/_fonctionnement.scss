@@ -12,10 +12,10 @@
         width: 284px;
         border-radius: $btnRadius;
         position: relative;
-        //display: flex;
-        //justify-content: space-evenly;
         cursor: pointer;
         @include boxShadow($box-shadow-round-deep, false);
+        transition:all 100ms ease-in-out;
+        
 
         > .first {
             padding-left: 4px;
@@ -45,8 +45,8 @@
         }
 
         &:hover {
-            @include boxShadow($box-shadow-round-deep-hover, false);
             background-color: #f5edff;
+            @include boxShadow($box-shadow-round-deep-hover, false);
 
             > i {
                 color: $primaryColor;

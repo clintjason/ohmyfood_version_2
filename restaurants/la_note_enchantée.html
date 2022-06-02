@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta name="author" content="Clint Jason Ngassa" />
+    <meta name="description" content="Ohmyfood - Ohmyfood -À la française : A restaurant page in the site written in html and scss intergration" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <title>Ohmyfood - La note enchantée</title>
+
+    <!-- Open Graph data for facebook-->
+
+    <meta property="og:title" content="Ohmyfood - Ohmyfood -La note enchantée" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clintjason.github.io/reservia/" />
+    <meta property="og:image" content="https://clintjason.github.io/reservia/images/logo/Reservia.svg" />
+    <meta property="og:description" content="Ohmyfood is a restaurant website" />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Ohmyfood" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clintjason.github.io/reservia/" />
+    <meta property="og:image" content="https://clintjason.github.io/reservia/images/logo/Reservia.svg" />
+    <meta property="og:description" content="Ohmyfood is a restaurant website" />
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="restaurant_header">
+        <a href="../index.html"><i class="fa-solid fa-arrow-left fa-lg"></i></a>
+        <img src="../assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
+    </header>
+    <!-- Main Section -->
+    <main class="menu">
+        <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La note enchantée">
+        <section class="menu__body">
+            <div class="menu__heading">
+                <h2>La note enchantée</h2>
+                <div class="heart">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+
+            <!-- Section Entrée -->
+            <section class="resto resto--1">
+                <h3 class="resto__heading">Entrées</h3>
+                <hr class="line"/>
+                <article class="resto__card resto__card--1">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Ravioles de foie gras </h4>
+                            <p>Accompagnés de leur crème à la truffe</p>
+                        </div>
+                        <p class="resto__card__body__price">25€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="resto__card resto__card--2">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Caviar osciètre</h4>
+                            <p>Sur blini à la farine de blé noir</p>
+                        </div>
+                        <p class="resto__card__body__price">35€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="resto__card resto__card--3">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Homard et espuma de potiron</h4>
+                            <p>Mariné aux zestes d'orange</p>
+                        </div>
+                        <p class="resto__card__body__price">20€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="resto__card resto__card--3">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Foie gras de canard cuit entier</h4>
+                            <p>Confiture de figue et pain toasté</p>
+                        </div>
+                        <p class="resto__card__body__price">35€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+            <!-- Section Plat -->
+            <section class="resto resto--2">
+                <h3 class="resto__heading">Plats</h3>
+                <hr class="line"/>
+                <article class="resto__card resto__card--1">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Noix de coquilles Saint-Jacques</h4>
+                            <p>Sur lit de purée de céleri-rave</p>
+                        </div>
+                        <p class="resto__card__body__price">40€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="resto__card resto__card--2">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Langoustine poêlée</h4>
+                            <p>Purée de patate douce</p>
+                        </div>
+                        <p class="resto__card__body__price">35€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="resto__card resto__card--3">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Mijoté de queue de boeuf</h4>
+                            <p>Et riz sauvage aux zestes de citron</p>
+                        </div>
+                        <p class="resto__card__body__price">44€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+            <!-- Section Dessert -->
+            <section class="resto resto--3">
+                <h3 class="resto__heading">Desserts</h3>
+                <hr class="line"/>
+                <article class="resto__card resto__card--1">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Macaron noisette et chocolat</h4>
+                            <p>Glace au caramel brun et sel de Guérande</p>
+                        </div>
+                        <p class="resto__card__body__price">18€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="resto__card resto__card--2">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Baba au rhum revisité</h4>
+                            <p>Avec son coulis de citron</p>
+                        </div>
+                        <p class="resto__card__body__price">22€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+                <article class="resto__card resto__card--3">
+                    <div class="resto__card__body">
+                        <div class="resto__card__body__desc">
+                            <h4>Tarte au citron meringuée</h4>
+                            <p>Déstructurée</p>
+                        </div>
+                        <p class="resto__card__body__price">23€</p>
+                    </div>
+                    <div class="resto__card__checkbox">
+                        <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <button class="btn explorer commander">Commander</button>
+    </main>
+    <!-- Footer Section -->
+    <footer>
+        <h2>ohmyfood</h2>
+        <a href=""><i class="fas fa-utensils"></i>&nbsp;&nbsp;&nbsp;&nbsp;Proposer un restaurant</a>
+        <a href=""><i class="fas fa-hands-helping"></i>	&nbsp; Devenir partenaire</a>
+        <a href="">Mentions légales</a>
+        <a href="mailto:contact@ohmyfood.com">Contact</a>
+    </footer>
+</body>
+</html>

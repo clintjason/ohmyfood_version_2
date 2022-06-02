@@ -1,13 +1,16 @@
 .btn {
-    border: 1px solid transparent;
+    border: 0px solid transparent;
     border-radius: $btnRadius;
-    padding: $btnPaddings;
+    padding: $btnPaddings $btnRadius;
     color: white;
+    cursor: pointer;
     @include gradientColor;
     @include boxShadow($box-shadow-round, false);
+    transition: all 120ms ease-in-out;
 }
 
 .explorer:hover {
-    @include gradientColor(lighten($secondaryColor,2%),lighten($primaryColor,5%));
+    @include gradientColor(lighten($secondaryColor,5%),lighten($primaryColor,10%));
     @include boxShadow($box-shadow-round-hover, false);
+    @include scale;
 }

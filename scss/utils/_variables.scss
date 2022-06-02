@@ -7,8 +7,11 @@ $siteBackground: #f6f6f6;
 $searchBackground: #eaeaea;
 $footerBackground: #353535;
 $textColor: #353535;
-$shadowColor: #7e7e7e;
+$shadowColor: lighten(#7e7e7e, 25%);
 $placeholderColor: #101010;
+
+// #8a8a8a;
+// #7b7b7b;
 
 // Button Variables
 $btnPaddings: 15px;
@@ -16,10 +19,11 @@ $btnRadius: 25px;
 
 // Box Shadow Variables
 $box-shadow-top-params: 0px 2px 3px ;
-$box-shadow-round: 1px 2px 3px 1px;
+$box-shadow-round: 0px 3px 5px 1px;
 $box-shadow-round-deep: 1px 1px 6px 1px;
-$box-shadow-round-deep-hover: 2px 2px 10px 1px;
-$box-shadow-round-hover: 0px 1px 5px 2px;
+$box-shadow-round-deep-hover: 2px 3px 10px 2px;
+$box-shadow-round-hover: 0px 3px 5px 3px;
+$box-shadow-uniform: 0px 0px 5px 1px;
 
 $inset : "inset";
 
@@ -33,6 +37,7 @@ $breakpoints: (
     small-mobile: 450px,
     mobile: 599px,
     tablette: 768px,
+    desktop-1040: 1040px,
+    desktop-1200: 1200px,
     desktop: 1480px,
-
 );

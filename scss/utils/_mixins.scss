@@ -7,9 +7,34 @@
 }
 
 @mixin gradientColor ($firstColor: $secondaryColor,$secondColor: $primaryColor) {
-    background-image: linear-gradient($firstColor,$secondColor);
+    background-image: linear-gradient(to bottom right, $firstColor 15%,$secondColor);
 }
 
+@mixin scale {
+    transform: scale(1.1);
+}
+
+@mixin rotate {
+    
+}
+
+@mixin animateMenuItems {
+    @for $i from 1 through 3 {
+        &--#{$i} {
+            animation: slideUp 1.5s (1 * $i) ease-in-out forwards;
+
+            @for $j from 1 through 4 {
+                > .resto__card--#{$j} {
+                    animation: slideUp 1.5s ((0.6 * $j) + (1 * $i)) ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+/*
+    REPSONSIVE MIXINS
+*/
 @mixin small-mobile-only {
     @media screen and (min-width: map-get($breakpoints,small-mobile)) {
         @content;
@@ -23,6 +48,17 @@
 
 @mixin tablette-only {
     @media screen and (min-width: map-get($breakpoints,tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop-1040-only {
+    @media screen and (min-width: map-get($breakpoints,desktop-1040)) {
+        @content;
+    }
+}
+@mixin desktop-1200-only {
+    @media screen and (min-width: map-get($breakpoints,desktop-1200)) {
         @content;
     }
 }

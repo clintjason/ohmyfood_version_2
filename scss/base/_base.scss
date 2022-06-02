@@ -10,4 +10,18 @@ section, footer{
 
 a {
     text-decoration: none;
+    color: unset;
+}
+
+html {
+    height: 100%;
+}
+body {
+    display: grid;
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto;
+}
+
+article {
+    margin: 20px 0px;
 }

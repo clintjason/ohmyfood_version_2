@@ -6,11 +6,12 @@
     <meta name="description" content="Ohmyfood - A demo mockup restaurant html and scss intergration" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,900&family=Shrikhand&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <title>Ohmyfood - It is a Restaurant Website</title>
 
@@ -34,7 +35,25 @@
 </head>
 
 <body>
-    <header>
+     <!-- LOADER Section -->
+     <div class="loader">
+         <div class="loader-container">
+             <div>
+                 <span class="loader__letter">O</span>
+                 <span class="loader__letter">h</span>
+                 <span class="loader__letter">m</span>
+                 <span class="loader__letter">y</span>
+                 <span class="loader__letter">f</span>
+                 <span class="loader__letter">o</span>
+                 <span class="loader__letter">o</span>
+                 <span class="loader__letter">d</span>
+             </div>
+             <i class="fa-solid fa-utensils"></i>
+         </div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="home_header">
         <div class="header">
             <img src="./assets/images/logo/ohmyfood@2x.svg" alt="logo ohmyfood"/>
         </div>
@@ -50,6 +69,7 @@
             <button class="btn explorer">Explorer nos restaurants</button>
         </section>
     </header>
+    <!-- Main Section -->
     <main>
         <!-- Section Fonctionnement -->
         <section class="fonction">
@@ -139,11 +159,12 @@
             </div>
         </section>
     </main>
+    <!-- Footer Section -->
     <footer>
         <h2>ohmyfood</h2>
-        <a href=""><i class="fas fa-utensils"></i>&nbsp;&nbsp;&nbsp;&nbsp;Proposer un restaurant</a>
-        <a href=""><i class="fas fa-hands-helping"></i>	&nbsp; Devenir partenaire</a>
-        <a href="">Mentions légales</a>
+        <a href="#"><i class="fas fa-utensils"></i>&nbsp;&nbsp;&nbsp;&nbsp;Proposer un restaurant</a>
+        <a href="#"><i class="fas fa-hands-helping"></i>	&nbsp; Devenir partenaire</a>
+        <a href="#">Mentions légales</a>
         <a href="mailto:contact@ohmyfood.com">Contact</a>
     </footer>
 </body>

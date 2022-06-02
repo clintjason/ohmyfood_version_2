@@ -1,0 +1,164 @@
+.restaurant_header {
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+    position: relative;
+    
+    i {
+        position: absolute;
+        left: 25px;
+        bottom: 42px;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+    background-color: $siteBackground;
+    
+    > img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+        font-style: italic; 
+        width: 100%;
+        
+        .heart {
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+    }
+    &__body {
+        background-color: $siteBackground;
+        border-radius: $btnRadius $btnRadius 0px 0px;
+        transform: translateY(-50px);
+        padding-bottom: 0px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+
+        @include desktop-1040-only {
+            flex-direction: row;
+            flex-wrap: wrap;
+            //gap: 25px;
+            justify-content: space-evenly;
+        }
+
+    }
+    .commander {
+        padding-left: 50px;
+        padding-right: 50px;
+        align-self: center;
+    }
+}
+
+.resto {
+    padding: 20px 0px 0px;
+
+    @include desktop-1040-only {
+        width: 30%;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        color: #7b7b7b;
+        font-weight: 200;
+
+        .fa-solid {
+            //display: none;
+            opacity: 0;
+            transform: scale(0);
+            position: relative;
+            right: 25px;
+            transition: all 800ms;
+        }
+    }
+    .line {
+        width: 45px;
+        color: $tertiaryColor;
+    }
+
+    @for $var from 1 to 4 {
+        &--#{$var} {
+            animation: slideUp 2s calc(1s * #{$var}) both;
+            > .resto__heading, .line {
+                animation: slideUp 2s 550ms both;
+            }
+            @for $cart from 1 to 4 {
+                .resto__card--#{$cart} {
+                    animation: slideUp-with-scale 2s calc(1s * #{$cart}) both;
+                }
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        border-radius: $btnPaddings;
+        @include boxShadow($box-shadow-uniform, false);
+        cursor: pointer;
+        justify-content: space-between;
+        width: 100%;
+        line-height: 25px;
+        overflow-x: hidden;
+
+        &__body {
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            overflow-x: hidden;
+            transition: all 500ms ease-in-out;
+            
+            &__desc {
+                width: 86%;
+
+                > h4, p {
+                    max-width: 95%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    //line-height: 25px;
+                    letter-spacing: 1.5px;
+                }
+
+                p {
+                    font-weight: lighter;
+                }
+            }
+            &__price {
+                align-self: end;
+                font-weight: bold;
+            }
+        }
+        &__checkbox {
+            display: flex;
+            background-color: $tertiaryColor;
+            padding: 10px 15px;
+            border-radius: 0px 15px 15px 0px;
+            margin-right: -56px;
+            justify-content: center;
+            align-items: center;
+            transition: all 800ms ease-in-out;
+            > i {
+                color: white;
+                transform: rotate(1turn);
+                transition: transform 1s;
+            }
+        }
+
+        &:hover {
+            .resto__card__checkbox {
+                margin-right: 0px;
+                > i {
+                    transform: rotate(-1turn);
+                }
+            }
+        }
+    }
+}
