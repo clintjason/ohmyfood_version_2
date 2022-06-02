@@ -303,7 +303,7 @@ h1, h2 {
 }
 
 .loader .loader-container {
-  position: absolute;
+  position: fixed;
   display: block;
   top: 30%;
 }

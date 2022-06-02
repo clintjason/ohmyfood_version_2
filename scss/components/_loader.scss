@@ -14,7 +14,7 @@
   animation: fadeout 3s 3s forwards;
 
   .loader-container {
-    position: absolute;
+    position: fixed;
     display: block;
     top: 30%;
   }
