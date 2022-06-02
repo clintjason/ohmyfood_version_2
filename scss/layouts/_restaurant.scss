@@ -28,6 +28,10 @@
             grid-template-columns: 4fr 1fr;
             padding: 5px 0px 10px 10px;
         }
+
+        &:hover {
+            @include boxShadow($box-shadow-round-deep-hover, false);
+        }
     }
 
     .new {

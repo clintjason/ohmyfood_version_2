@@ -153,6 +153,7 @@
         }
 
         &:hover {
+            @include boxShadow($box-shadow-round-deep-hover, false);
             .resto__card__checkbox {
                 margin-right: 0px;
                 > i {
