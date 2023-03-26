@@ -10,8 +10,8 @@
         background-color: $siteBackground;
         padding: $btnPaddings $btnPaddings $btnPaddings 50px;
         width: 284px;
-        border-radius: $btnRadius;
         position: relative;
+        border-radius: $btnRadius;
         cursor: pointer;
         @include boxShadow($box-shadow-round-deep, false);
         transition:all 100ms ease-in-out;
